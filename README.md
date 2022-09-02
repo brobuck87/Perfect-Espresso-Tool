@@ -27,3 +27,11 @@ A Site dedicated to helping users create the perfect shot of espresso
 - Reddit API to pull top posts from r/coffee
 - Wikipedia API for information about coffee and beans (search)
 - Buyameacoffee API
+
+## Wireframe
+
+![Wireframe](./assets/images/perfect-espresso-tool.drawio.svg)
+
+# Color Palette
+
+![Color Palette](./assets/images/Color%20Hunt%20Palette%204834346b4f4feed6c4fff3e4.png)
