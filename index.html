@@ -64,7 +64,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-ltcrm dark:bg-espresso-900">
-   <nav class="bg-drkcrm border-b-2 border-espresso-900 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-700">
+   <nav class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-700">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex items-center">
         <img
@@ -81,7 +81,7 @@
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="flex flex-col p-4 mt-4 bg-ltcrm rounded-lg border border-espresso md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-2 md:bg-chocolate-800 dark:bg-ltcrm md:dark:bg-chocolate-900 md:dark:border-2">
           <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0  md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900" aria-current="page">Home</a>
+            <a href="./index.html" class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0  md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900" aria-current="page">Home</a>
           </li>
           <li>
             <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent">Notebook</a>
@@ -94,11 +94,11 @@
     </div>
   </nav>
   
-    <div class="container px-10 flex mt-40">
+    <div class="px-10 flex mt-40">
       <!-- drawer init and show -->
       <div class="text-center w-full">
         <button
-          class="text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-md px-5 py-2.5 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
+          class="text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-3xl px-20 py-10 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
           type="button"
           onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
