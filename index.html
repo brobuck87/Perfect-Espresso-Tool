@@ -63,90 +63,44 @@
     <!-- //Stylesheet// -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="bg-espresso-900">
-    <nav
-      class="flex-auto text-zinc-900 px-2 sm:px-4 py-2.5 bg-chocolate-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-ltcrm"
-    >
-      <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
-      >
-        <a href="#" class="flex items-center">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
-            class="mr-3 h-6 sm:h-9"
-            alt="Coffee Bean Logo"
-          />
-          <span class="self-center text-3xl whitespace-nowrap dark:text-white"
-            >Perfect Coffee Tool</span
-          >
-        </a>
-        <div class="flex md:order-2">
-          <!-- Buy me a coffee button needs to go here -->
-
-          <button
-            data-collapse-toggle="navbar-sticky"
-            type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div
-          class="hidden justify-between w-full md:flex md:w-auto md:order-1"
-          id="navbar-sticky"
-        >
-          <ul
-            class="flex flex-col font-thin p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:border-0 md:bg-white dark:bg-espresso-900 md:dark:bg-espresso-900 dark:border-ltcrm"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 rounded md:p-0 dark:text-ltcrm dark:hover:text-white"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 rounded md:p-0 dark:text-ltcrm"
-                >Notebook</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pr-4 pl-3 rounded md:p-0 dark:text-ltcrm"
-                >Education</a
-              >
-            </li>
-          </ul>
-        </div>
+  <body class="bg-ltcrm dark:bg-espresso-900">
+   <nav class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-700">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="#" class="flex items-center">
+        <img
+        src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
+        class="mr-3 h-6 sm:h-9"
+        alt="Coffee Bean Logo"
+        />
+          <span class="self-center text-espresso-900 text-3xl whitespace-nowrap dark:text-ltcrm">Perfect Espresso Tool</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-espresso-900 rounded-lg md:hidden hover:bg-espresso-300 focus:outline-none focus:ring-1 focus:ring-espresso-300 dark:text-ltcrm dark:hover:bg-espresso-300 dark:focus:ring-ltcrm" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6 fill-espresso-900 hover:fill-ltcrm" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-ltcrm rounded-lg border border-espresso md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-2 md:bg-chocolate-800 dark:bg-ltcrm md:dark:bg-chocolate-900 md:dark:border-2">
+          <li>
+            <a href="./index.html" class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0  md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent">Notebook</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent">Education</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div class="container px-10 flex mt-40">
+    </div>
+  </nav>
+  
+    <div class="px-10 flex mt-40">
       <!-- drawer init and show -->
-      <div class="text-center">
+      <div class="text-center w-full">
         <button
-          class="text-ltcrm bg-chocolate-900 focus:ring-4 focus:ring-blue-300 font-light rounded-lg text-md px-5 py-2.5 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-blue-800"
+          class="text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-3xl px-20 py-10 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
           type="button"
-          data-drawer-target="drawer-navigation"
-          data-drawer-show="drawer-navigation"
+          onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
         >
           Show Brew Methods
@@ -156,21 +110,21 @@
       <!-- drawer component -->
       <div
         id="drawer-navigation"
-        class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-drkcrm"
+        class="fixed z-40 h-screen p-4 overflow-y-auto bg-chocolate-800 w-80 dark:bg-drkcrm"
         tabindex="-1"
         aria-labelledby="drawer-navigation-label"
       >
         <h5
           id="drawer-navigation-label"
-          class="text-base font-semibold text-gray-500 uppercase dark:text-espresso-900"
+          class="text-base font-semibold text-ltcrm uppercase dark:text-espresso-900"
         >
           Brew Methods
         </h5>
         <button
           type="button"
-          data-drawer-dismiss="drawer-navigation"
+          onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
-          class="text-espresso-900 bg-transparent hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
+          class="text-ltcrm bg-transparent hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
         >
           <svg
             aria-hidden="true"
@@ -192,220 +146,77 @@
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-thin text-gray-900 rounded-lg dark:text-espresso-900 dark:hover:text-ltcrm hover:bg-gray-100 dark:hover:bg-chocolate-700"
+                class="flex items-center p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg dark:text-espresso-900 dark:hover:text-ltcrm hover:bg-drkcrm dark:hover:bg-chocolate-700"
               >
                 <img
-                  src="./assets/images/mocha-svgrepo-com.svg"
+                  src="./assets/images/espresso.svg"
                   alt="espresso icon"
                 />
                 <span class="ml-3">Espresso</span>
               </a>
             </li>
             <li>
-              <button
-                type="button"
-                class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                aria-controls="dropdown-example"
-                data-collapse-toggle="dropdown-example"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 text-left whitespace-nowrap"
-                  >E-commerce</span
-                >
-                <svg
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              <ul id="dropdown-example" class="hidden py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                    >Products</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                    >Billing</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 text-base font-normal text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                    >Invoice</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+                class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
                 >
-                  <path
-                    d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
-                <span
-                  class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                  >Pro</span
-                >
+                <img class="h-5 ml-1" src="./assets/images/cold-brew.svg" alt="cold drink icon">
+                <span class="flex-1 ml-3 text-left whitespace-nowrap">
+                  Cold Brew
+                </span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"
-                  ></path>
-                  <path
-                    d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
-                <span
-                  class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-600 bg-blue-200 rounded-full dark:bg-blue-900 dark:text-blue-200"
-                  >3</span
-                >
+                <img class="h-5 ml-1" src="./assets/images/funnel-drip.svg" alt="filter icon">
+                <span class="flex-1 ml-3 whitespace-nowrap">Drip</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Users</span>
+                <img class="h-5 ml-1" src="./assets/images/press.svg" alt="filter icon">
+                <span class="flex-1 ml-3 whitespace-nowrap">Aeropress</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
+                <img class="h-5 ml-1" src="./assets/images/french-press.svg" alt="filter icon">
+                <span class="flex-1 ml-3 whitespace-nowrap">French Press</span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+                class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Sign In</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Sign Up</span>
+                <img class="h-5 ml-1" src="./assets/images/coffee-pot.svg" alt="filter icon">
+                <span class="flex-1 ml-3 whitespace-nowrap">Pour Over</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="w-2/3 px-10">
+      
+    </div>
+    <div class="container px-10 flex pt-16">
+      <div class="w-2/3 mr-8 px-10">
         <div
-          class="w-full align-items-center bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+          class="max-w-md align-items-center bg-white rounded-lg border border-drkcrm shadow-md dark:bg-gray-800 dark:border-gray-700"
         >
           <a href="#">
             <img
-              class="rounded-t-lg w-full"
-              src="./assets/images/nathan-dumlao-dAYJfrtVjh0-unsplash.jpg"
+              class="rounded-t-lg w-full max-w-md"
+              src="./assets/images/espresso-image.jpg"
               alt="Cup of espresso with spoon on white plate"
             />
           </a>
@@ -428,66 +239,7 @@
           </div>
         </div>
       </div>
-      <div class="w-1/3">
-        <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
-          <table
-            class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
-          >
-            <tbody>
-              <tr
-                class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
-              >
-                <th
-                  scope="row"
-                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Apple MacBook Pro 17"
-                </th>
-                <td class="py-4 px-6">Sliver</td>
-                <td class="py-4 px-6">Laptop</td>
-              </tr>
-              <tr
-                class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
-              >
-                <th
-                  scope="row"
-                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Microsoft Surface Pro
-                </th>
-                <td class="py-4 px-6">White</td>
-                <td class="py-4 px-6">Laptop PC</td>
-              </tr>
-              <tr
-                class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
-              >
-                <th
-                  scope="row"
-                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Magic Mouse 2
-                </th>
-                <td class="py-4 px-6">Black</td>
-                <td class="py-4 px-6">Accessories</td>
-              </tr>
-              <tr
-                class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
-              >
-                <th
-                  scope="row"
-                  class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Google Pixel Phone
-                </th>
-                <td class="py-4 px-6">Gray</td>
-                <td class="py-4 px-6">Phone</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
-
     <!-- //jQuery// -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
@@ -502,8 +254,6 @@
     ></script>
 
     <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
-    <!-- //Custom Tailwind JS -->
-    <script src="./assets/js/tailwind.config.js"></script>
     <!-- //Custom JS// -->
     <script src="./assets/js/script.js"></script>
   </body>
