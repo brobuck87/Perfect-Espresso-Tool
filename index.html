@@ -64,36 +64,75 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-ltcrm dark:bg-espresso-900">
-   <nav class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-700">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex items-center">
-        <img
-        src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
-        class="mr-3 h-6 sm:h-9"
-        alt="Coffee Bean Logo"
-        />
-          <span class="self-center text-espresso-900 text-3xl whitespace-nowrap dark:text-ltcrm">Perfect Espresso Tool</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-espresso-900 rounded-lg md:hidden hover:bg-espresso-300 focus:outline-none focus:ring-1 focus:ring-espresso-300 dark:text-ltcrm dark:hover:bg-espresso-300 dark:focus:ring-ltcrm" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-6 h-6 fill-espresso-900 hover:fill-ltcrm" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 bg-ltcrm rounded-lg border border-espresso md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-2 md:bg-chocolate-800 dark:bg-ltcrm md:dark:bg-chocolate-900 md:dark:border-2">
-          <li>
-            <a href="./index.html" class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0  md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent">Notebook</a>
-          </li>
-          <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent">Education</a>
-          </li>
-        </ul>
+    <nav
+      class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-600"
+    >
+      <div
+        class="container flex flex-wrap justify-between items-center mx-auto"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
+            class="mr-3 h-6 sm:h-9"
+            alt="Coffee Bean Logo"
+          />
+          <span
+            class="self-center text-espresso-900 text-3xl whitespace-nowrap dark:text-ltcrm"
+            >Perfect Espresso Tool</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-espresso-900 rounded-lg md:hidden hover:bg-espresso-300 focus:outline-none focus:ring-1 focus:ring-espresso-300 dark:text-ltcrm dark:hover:bg-espresso-300 dark:focus:ring-ltcrm"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6 fill-espresso-900 hover:fill-ltcrm"
+            aria-hidden="true"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-4 bg-ltcrm rounded-lg border border-espresso dark:border-2 dark:border-ltcrm md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-2 md:bg-chocolate-800 dark:bg-ltcrm md:dark:bg-chocolate-800 md:dark:border-2"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent"
+                >Notebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent"
+                >Education</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  
+    </nav>
+
     <div class="px-10 flex mt-40">
       <!-- drawer init and show -->
       <div class="text-center w-full">
@@ -124,7 +163,7 @@
           type="button"
           onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
-          class="text-ltcrm bg-transparent hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
+          class="text-ltcrm bg-transparent focus:outline-none hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
         >
           <svg
             aria-hidden="true"
@@ -143,72 +182,88 @@
         </button>
         <div class="py-4 overflow-y-auto">
           <ul class="space-y-2">
-            <li>
+            <li id="espresso">
               <a
+                
                 href="#"
                 class="flex items-center p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg dark:text-espresso-900 dark:hover:text-ltcrm hover:bg-drkcrm dark:hover:bg-chocolate-700"
               >
-                <img
-                  src="./assets/images/espresso.svg"
-                  alt="espresso icon"
-                />
+                <img src="./assets/images/espresso.svg" alt="espresso icon" />
                 <span class="ml-3">Espresso</span>
               </a>
             </li>
-            <li>
+            <li id="cold-brew">
               <a
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
-                >
-                <img class="h-5 ml-1" src="./assets/images/cold-brew.svg" alt="cold drink icon">
+              >
+                <img
+                  class="h-5 ml-1"
+                  src="./assets/images/cold-brew.svg"
+                  alt="cold drink icon"
+                />
                 <span class="flex-1 ml-3 text-left whitespace-nowrap">
                   Cold Brew
                 </span>
               </a>
             </li>
-            <li>
+            <li id="drip">
               <a
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <img class="h-5 ml-1" src="./assets/images/funnel-drip.svg" alt="filter icon">
+                <img
+                  class="h-5 ml-1"
+                  src="./assets/images/funnel-drip.svg"
+                  alt="filter icon"
+                />
                 <span class="flex-1 ml-3 whitespace-nowrap">Drip</span>
               </a>
             </li>
-            <li>
+            <li id="aero-press">
               <a
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <img class="h-5 ml-1" src="./assets/images/press.svg" alt="filter icon">
-                <span class="flex-1 ml-3 whitespace-nowrap">Aeropress</span>
+                <img
+                  class="h-5 ml-1"
+                  src="./assets/images/press.svg"
+                  alt="filter icon"
+                />
+                <span class="flex-1 ml-3 whitespace-nowrap">AeroPress</span>
               </a>
             </li>
-            <li>
+            <li id="french-press">
               <a
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <img class="h-5 ml-1" src="./assets/images/french-press.svg" alt="filter icon">
+                <img
+                  class="h-5 ml-1"
+                  src="./assets/images/french-press.svg"
+                  alt="filter icon"
+                />
                 <span class="flex-1 ml-3 whitespace-nowrap">French Press</span>
               </a>
             </li>
-            <li>
+            <li id="pour-over">
               <a
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <img class="h-5 ml-1" src="./assets/images/coffee-pot.svg" alt="filter icon">
-                <span class="flex-1 ml-3 whitespace-nowrap">Pour Over</span>
+                <img
+                  class="h-5 ml-1"
+                  src="./assets/images/coffee-pot.svg"
+                  alt="filter icon"
+                />
+                <span class="flex-1 ml-3 whitespace-nowrap">Pour-Over</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
-
-      
     </div>
-    <div class="container px-10 flex pt-16">
+    <div class="px-10 flex pt-16">
       <div class="w-2/3 mr-8 px-10">
         <div
           class="max-w-md align-items-center bg-white rounded-lg border border-drkcrm shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -236,6 +291,26 @@
               excepturi beatae praesentium temporibus fugiat ex deleniti qui
               facere est tenetur, delectus reiciendis perferendis quae.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/3 mr-8 px-10">
+        <div
+          class="dark:bg-chocolate-900 border-2 border-chocolate-700 dark:border-ltcrm rounded-md"
+        >
+          <h2
+            class="text-espresso-700 dark:text-ltcrm text-3xl mx-3 p-5 text-center border-b-2 border-chocolate-700 dark:border-ltcrm"
+          >
+            Brew Details
+          </h2>
+          <div class="text-espresso-900 dark:text-ltcrm pl-3 py-5">
+            <ul>
+              <li class="py-3 pl-4">Grind Size</li>
+              <p id="grind-size" class="py-3 pl-8 text-md "></p>
+              <li class="py-3 pl-4">Bean Weight</li>
+              <li class="py-3 pl-4">Water Temperature</li>
+              <li class="py-3 pl-4">Ratio</li>
+            </ul>
           </div>
         </div>
       </div>
