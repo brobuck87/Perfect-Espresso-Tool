@@ -20,6 +20,10 @@ const options = {
 
 const drawer = new Drawer(targetEl, options);
 
+$('.drawer-toggle').click(function () {
+  drawer.toggle()
+});
+
 const brewList = {
   "cold-brew": {
     "grind-size": "Extra Coarse",
@@ -58,10 +62,9 @@ const brewList = {
     "ratio": 17.42
   }
 }
-
 [espressoEl, coldBrewEl, dripEl, aeroEl, frenchEl, pourEl].forEach((element) => {
   element.click((e) => {
-    grindEl.text(brewList[element.attr('id')].grind-size)
+    grindEl.text(brewList[element.attr('id')].grind - size)
     // console.log("I'm amazing")
     // console.log(brewList[element.attr('id')], element, grindEl)
     // console.log(grindEl)
