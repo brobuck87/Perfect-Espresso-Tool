@@ -63,13 +63,12 @@
     <!-- //Stylesheet// -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body class="bg-ltcrm dark:bg-espresso-900">
     <nav
       class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-600"
     >
-      <div
-        class="container flex flex-wrap justify-between items-center mx-auto"
-      >
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#" class="flex items-center">
           <img
             src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
@@ -137,9 +136,8 @@
       <!-- drawer init and show -->
       <div class="text-center w-full">
         <button
-          class="text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-3xl px-20 py-10 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
+          class="drawer-toggle text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-3xl px-20 py-10 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
           type="button"
-          onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
         >
           Show Brew Methods
@@ -161,9 +159,8 @@
         </h5>
         <button
           type="button"
-          onclick="drawer.toggle()"
           aria-controls="drawer-navigation"
-          class="text-ltcrm bg-transparent focus:outline-none hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
+          class="drawer-toggle text-ltcrm bg-transparent focus:outline-none hover:bg-espresso-400 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-espresso-400 dark:hover:text-espresso-900"
         >
           <svg
             aria-hidden="true"
@@ -184,7 +181,6 @@
           <ul class="space-y-2">
             <li id="espresso">
               <a
-                
                 href="#"
                 class="flex items-center p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg dark:text-espresso-900 dark:hover:text-ltcrm hover:bg-drkcrm dark:hover:bg-chocolate-700"
               >
@@ -202,9 +198,7 @@
                   src="./assets/images/cold-brew.svg"
                   alt="cold drink icon"
                 />
-                <span class="flex-1 ml-3 text-left whitespace-nowrap">
-                  Cold Brew
-                </span>
+                <span class="flex-1 ml-3 text-left whitespace-nowrap"> Cold Brew </span>
               </a>
             </li>
             <li id="drip">
@@ -225,11 +219,7 @@
                 href="#"
                 class="flex justify-center w-full p-2 text-base font-md text-drkcrm hover:text-espresso-900 rounded-lg group hover:bg-drkcrm dark:text-espresso-900 dark:hover:text-ltcrm dark:hover:bg-chocolate-700"
               >
-                <img
-                  class="h-5 ml-1"
-                  src="./assets/images/press.svg"
-                  alt="filter icon"
-                />
+                <img class="h-5 ml-1" src="./assets/images/press.svg" alt="filter icon" />
                 <span class="flex-1 ml-3 whitespace-nowrap">AeroPress</span>
               </a>
             </li>
@@ -283,13 +273,11 @@
                 Noteworthy technology acquisitions 2021
               </h5>
             </a>
-            <p
-              class="mb-3 font-normal text-gray-700 text-center dark:text-gray-400"
-            >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-              blanditiis neque asperiores, amet consequuntur doloremque
-              excepturi beatae praesentium temporibus fugiat ex deleniti qui
-              facere est tenetur, delectus reiciendis perferendis quae.
+            <p class="mb-3 font-normal text-gray-700 text-center dark:text-gray-400">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla blanditiis
+              neque asperiores, amet consequuntur doloremque excepturi beatae praesentium
+              temporibus fugiat ex deleniti qui facere est tenetur, delectus reiciendis
+              perferendis quae.
             </p>
           </div>
         </div>
@@ -306,7 +294,7 @@
           <div class="text-espresso-900 dark:text-ltcrm pl-3 py-5">
             <ul>
               <li class="py-3 pl-4">Grind Size</li>
-              <p id="grind-size" class="py-3 pl-8 text-md "></p>
+              <p id="grind-size" class="py-3 pl-8 text-md"></p>
               <li class="py-3 pl-4">Bean Weight</li>
               <li class="py-3 pl-4">Water Temperature</li>
               <li class="py-3 pl-4">Ratio</li>
