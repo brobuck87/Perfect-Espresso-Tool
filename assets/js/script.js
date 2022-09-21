@@ -20,8 +20,10 @@ const options = {
 
 const drawer = new Drawer(targetEl, options);
 
-$('.drawer-toggle').click(function () {
-  drawer.toggle()
+$("#drawer-navigation").removeClass("hidden");
+
+$(".drawer-toggle").click(function () {
+  drawer.toggle();
 });
 
 const brewList = {
@@ -29,42 +31,41 @@ const brewList = {
     "grind-size": "Extra Coarse",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
+    ratio: 17.42,
   },
   "french-press": {
     "grind-size": "Coarse",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
+    ratio: 17.42,
   },
-  "drip": {
+  drip: {
     "grind-size": "Medium",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
+    ratio: 17.42,
   },
   "pour-over": {
     "grind-size": "Medium-Fine",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
+    ratio: 17.42,
   },
-  "espresso": {
+  espresso: {
     "grind-size": "Fine Grind",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
+    ratio: 17.42,
   },
   "aero-press": {
     "grind-size": "Fine Grind",
     "bean-weight": "",
     "water-temperature": "",
-    "ratio": 17.42
-  }
-}
-[espressoEl, coldBrewEl, dripEl, aeroEl, frenchEl, pourEl].forEach((element) => {
+    ratio: 17.42,
+  },
+}[(espressoEl, coldBrewEl, dripEl, aeroEl, frenchEl, pourEl)].forEach((element) => {
   element.click((e) => {
-    grindEl.text(brewList[element.attr('id')].grind - size)
+    grindEl.text(brewList[element.attr("id")].grind - size);
     // console.log("I'm amazing")
     // console.log(brewList[element.attr('id')], element, grindEl)
     // console.log(grindEl)
