@@ -17,6 +17,8 @@ const options = {
 
 const drawer = new Drawer(targetEl, options);
 
+$("#drawer-navigation").removeClass("hidden");
+
 $(".drawer-toggle").click(function () {
   drawer.toggle();
 });
