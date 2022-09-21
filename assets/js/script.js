@@ -73,3 +73,16 @@ function displayBrewDetails(brewMethod) {
   waterTemperature.text(brewList[brewMethod].waterTemperature);
   ratio.text(brewList[brewMethod].ratio);
 }
+
+setTimeout(() => {
+  $.ajax("https://www.reddit.com/r/coffee/top/.json?count=1", {
+    success: function (response) {
+      $("#reddit-title").text(response.data.children[0].data.title);
+      $("#reddit-link").attr(
+        "href",
+        "https://www.reddit.com" + response.data.children[0].data.permalink
+      );
+      $("#reddit-toast").removeClass("hidden");
+    },
+  });
+}, 5000);
