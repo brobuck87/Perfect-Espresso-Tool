@@ -82,7 +82,7 @@ setTimeout(() => {
         "href",
         "https://www.reddit.com" + response.data.children[0].data.permalink
       );
-      $("#reddit-toast").removeClass("hidden");
+      $("#toast-notification").removeClass("hidden");
     },
   });
 }, 5000);
