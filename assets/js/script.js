@@ -1,11 +1,8 @@
 const targetEl = document.getElementById("drawer-navigation");
 const grindEl = $("#grind-size");
-const espressoEl = $("#espresso");
-const coldBrewEl = $("#cold-brew");
-const dripEl = $("#drip");
-const aeroEl = $("#aero-press");
-const frenchEl = $("#french-press");
-const pourEl = $("#pour-over");
+const beanWeight = $("#bean-weight");
+const waterTemperature = $("#water-temperature");
+const ratio = $("#ratio");
 
 // options with default values
 const options = {
@@ -20,57 +17,57 @@ const options = {
 
 const drawer = new Drawer(targetEl, options);
 
-$('.drawer-toggle').click(function () {
-  drawer.toggle()
+$(".drawer-toggle").click(function () {
+  drawer.toggle();
 });
 
 const brewList = {
-  "cold-brew": {
-    "grind-size": "Extra Coarse",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
+  coldBrew: {
+    grindSize: "Extra Coarse",
+    beanWeight: "69",
+    waterTemperature: "475°F",
+    ratio: 17.42,
   },
-  "french-press": {
-    "grind-size": "Coarse",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
+  frenchPress: {
+    grindSize: "Coarse",
+    beanWeight: "72",
+    waterTemperature: "231°F",
+    ratio: 17.42,
   },
-  "drip": {
-    "grind-size": "Medium",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
+  drip: {
+    grindSize: "Medium",
+    beanWeight: "101",
+    waterTemperature: "490°F",
+    ratio: 17.42,
   },
-  "pour-over": {
-    "grind-size": "Medium-Fine",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
+  pourOver: {
+    grindSize: "Medium Fine",
+    beanWeight: "32",
+    waterTemperature: "193°F",
+    ratio: 17.42,
   },
-  "espresso": {
-    "grind-size": "Fine Grind",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
+  espresso: {
+    grindSize: "Fine Grind",
+    beanWeight: "56",
+    waterTemperature: "745°F",
+    ratio: 17.42,
   },
-  "aero-press": {
-    "grind-size": "Fine Grind",
-    "bean-weight": "",
-    "water-temperature": "",
-    "ratio": 17.42
-  }
-}
-[espressoEl, coldBrewEl, dripEl, aeroEl, frenchEl, pourEl].forEach((element) => {
-  element.click((e) => {
-    grindEl.text(brewList[element.attr('id')].grind - size)
-    // console.log("I'm amazing")
-    // console.log(brewList[element.attr('id')], element, grindEl)
-    // console.log(grindEl)
-  });
+  aeroPress: {
+    grindSize: "Fine Grind",
+    beanWeight: "78",
+    waterTemperature: "916°F",
+    ratio: 17.42,
+  },
+};
+
+$(".brew-method").click(function () {
+  const brewMethod = $(this).attr("id");
+  displayBrewDetails(brewMethod);
 });
 
-// Listen to click for each element
-// Based on click select the right grind size
-// Put grind size onto the page
+function displayBrewDetails(brewMethod) {
+  grindEl.text(brewList[brewMethod].grindSize);
+  beanWeight.text(brewList[brewMethod].beanWeight);
+  waterTemperature.text(brewList[brewMethod].waterTemperature);
+  ratio.text(brewList[brewMethod].ratio);
+}
