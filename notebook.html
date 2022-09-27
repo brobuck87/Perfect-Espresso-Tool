@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Espresso Tool</title>
+    <!-- //Tailwind// -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              espresso: {
+                DEFAULT: "#483434",
+                50: "#DDD1D1",
+                100: "#D5C5C5",
+                200: "#C4ADAD",
+                300: "#B39595",
+                400: "#A27E7E",
+                500: "#8F6767",
+                600: "#775656",
+                700: "#604545",
+                800: "#483434",
+                900: "#271C1C",
+              },
+              chocolate: {
+                DEFAULT: "#6B4F4F",
+                50: "#F7F5F5",
+                100: "#EFE9E9",
+                200: "#DDD1D1",
+                300: "#CCBABA",
+                400: "#BBA2A2",
+                500: "#A98B8B",
+                600: "#987474",
+                700: "#826060",
+                800: "#6B4F4F",
+                900: "#4B3737",
+              },
+              drkcrm: "#EED6C4",
+              ltcrm: "#FFF3E4",
+            },
+            fontFamily: {
+              sans: ["Alegraya Sans", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- //Flowbite// -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css"
+    />
+    <!-- //Google Fonts// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- //Stylesheet// -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-ltcrm dark:bg-espresso-900">
+    <nav
+      class="bg-drkcrm border-b-2 border-espresso-900 fixed w-full z-20 top-0 left-0 px-2 sm:px-4 py-2.5 dark:border-ltcrm dark:bg-chocolate-600"
+    >
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2302/2302566.png"
+            class="mr-3 h-6 sm:h-9"
+            alt="Coffee Bean Logo"
+          />
+          <span
+            class="self-center text-espresso-900 text-3xl whitespace-nowrap dark:text-ltcrm"
+            >Perfect Espresso Tool</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-espresso-900 rounded-lg md:hidden hover:bg-espresso-300 focus:outline-none focus:ring-1 focus:ring-espresso-300 dark:text-ltcrm dark:hover:bg-espresso-300 dark:focus:ring-ltcrm"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6 fill-espresso-900 hover:fill-ltcrm"
+            aria-hidden="true"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-4 bg-ltcrm rounded-lg border border-espresso dark:border-2 dark:border-ltcrm md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-light md:border-2 md:bg-chocolate-800 dark:bg-ltcrm md:dark:bg-chocolate-800 md:dark:border-2"
+          >
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 pr-4 pl-3 text-espresso-900 bg-ltcrm hover:bg-espresso-300 md:hover:bg-transparent rounded-xl md:bg-transparent md:text-drkcrm md:hover:text-ltcrm md:p-0 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm dark:text-espresso-900"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./notebook.html"
+                class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent"
+                >Notebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pr-4 pl-3 text-espresso-900 rounded-xl hover:bg-espresso-300 md:hover:bg-transparent md:border-0 md:text-drkcrm md:hover:text-ltcrm md:p-0 dark:text-espresso-900 md:dark:text-ltcrm md:dark:hover:text-drkcrm dark:hover:bg-chocolate-700 dark:hover:text-ltcrm md:dark:hover:bg-transparent"
+                >Education</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="flex mt-40 h-100"></div>
+    <div class="px-10 flex mt-40">
+      <!-- button to add new brew result -->
+      <div id="brew-results" class="text-center w-full">
+        <button
+          class="text-ltcrm border-2 border-espresso-900 dark:border-ltcrm dark:text-ltcrm bg-chocolate-800 font-light rounded-lg text-3xl px-20 py-10 mr-2 dark:bg-chocolate-900 dark:hover:bg-chocolate-700 focus:outline-none dark:focus:ring-chocolate-900"
+          type="button"
+        >
+          Log Espresso Brew Results
+        </button>
+      </div>
+    </div>
+    <form id="form" class="hidden flex justify-center">
+      <label id="grind" class="text-ltcrm">
+        Grind Size:
+        <input class="flex bg-chocolate-800" name="grind-size" type="text" required />
+      </label>
+      <label id="bean" class="text-ltcrm">
+        Bean Weight:
+        <input class="flex bg-chocolate-800" name="bean-weight" type="number" required />
+      </label>
+      <label id="temp" class="text-ltcrm">
+        Water Temperature:
+        <input
+          class="flex bg-chocolate-800"
+          name="water-temperature"
+          type="number"
+          required
+        />
+      </label>
+      <label id="ratio" class="text-ltcrm">
+        Ratio:
+        <input class="flex bg-chocolate-800" name="ratio" type="number" required />
+      </label>
+      <button id="save" class="flex text-ltcrm">Save</button>
+    </form>
+    <!-- //jQuery// -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- //jQuery UI// -->
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <!-- //Custom JS// -->
+    <script src="./assets/js/notebook.js"></script>
+  </body>
+</html>
