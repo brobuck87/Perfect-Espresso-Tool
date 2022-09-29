@@ -144,29 +144,53 @@
       </div>
     </div>
     <form id="form" class="hidden flex justify-center">
-      <label id="grind" class="text-ltcrm">
+      <label class="text-ltcrm">
         Grind Size:
-        <input class="flex bg-chocolate-800" name="grind-size" type="text" required />
+        <input id="grind" class="flex bg-chocolate-800" name="grind-size" type="text" required />
       </label>
-      <label id="bean" class="text-ltcrm">
+      <label class="text-ltcrm">
         Bean Weight:
-        <input class="flex bg-chocolate-800" name="bean-weight" type="number" required />
+        <input id="bean" class="flex bg-chocolate-800" name="bean-weight" type="number" required />
       </label>
-      <label id="temp" class="text-ltcrm">
+      <label class="text-ltcrm">
         Water Temperature:
         <input
+          id="temp"
           class="flex bg-chocolate-800"
           name="water-temperature"
           type="number"
           required
         />
       </label>
-      <label id="ratio" class="text-ltcrm">
+      <label class="text-ltcrm">
         Ratio:
-        <input class="flex bg-chocolate-800" name="ratio" type="number" required />
+        <input id="ratio" class="flex bg-chocolate-800" name="ratio" type="number" required />
       </label>
       <button id="save" class="flex text-ltcrm">Save</button>
     </form>
+    <!-- Create table without data -->
+    <div class="overflow-x-auto relative sm:rounded-lg">
+      <table class="w-2/3 mx-auto mt-4 text-sm text-left text-gray-500 dark:text-ltcrm border-2 border-ltcrm">
+          <thead class="text-sm text-gray-700 uppercase text-center border-b-2 dark:text-drkcrm">
+              <tr>
+                  <th scope="col" class="py-3 px-6">
+                      Grind Size
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                      Bean weight
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                      Water Temperature
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                      Ratio
+                  </th>
+              </tr>
+          </thead>
+          <tbody id="brew-table">
+          </tbody>
+      </table>
+  </div>
     <!-- //jQuery// -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"

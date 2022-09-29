@@ -1,29 +1,54 @@
-var grindEl = document.querySelector("#grind");
-var beanEl = document.querySelector("#bean");
-var tempEl = document.querySelector("#temp");
-var ratioEl = document.querySelector("#ratio");
-var saveButton = document.querySelector("#save");
+const grindEl = $("#grind");
+const beanEl = $("#bean");
+const tempEl = $("#temp");
+const ratioEl = $("#ratio");
+const saveButton = $("#save");
+const tableEl = $("#brew-table");
 
-formRows = [grindEl, beanEl, tempEl, ratioEl];
-
-saveButton.addEventListener("click", function (event) {
+saveButton.click(function (event) {
   event.preventDefault();
+  // pull current local storage array if it exits, parse it (because it will be a string)
+  const pastBrewDetails = JSON.parse(localStorage.getItem("brewArray")) || [];
 
-  var brewDetails = {
-    grind: grindEl.value,
-    bean: beanEl.value,
-    temp: tempEl.value,
-    ratio: ratioEl.value,
+  const brewDetails = {
+    grind: grindEl.val(),
+    bean: beanEl.val(),
+    temp: tempEl.val(),
+    ratio: ratioEl.val(),
   };
 
-  localStorage.setItem("brewDetails", JSON.stringify(brewDetails));
-  addRow();
+  // add object to array from form
+  console.log(pastBrewDetails);
+  pastBrewDetails.push(brewDetails);
+
+  localStorage.setItem("brewArray", JSON.stringify(pastBrewDetails));
+  buildTable();
 });
 
-function addRow() {
-  formRows.forEach((element) => {
-    let firstRow = document.createElement("input");
-    element.append(firstRow);
+function buildTable() {
+  // ADD TRASHCAN IN FUTURE PR FOR USER DELETION
+
+  // empty current table
+  tableEl.text("");
+  // pull local storage and parse it
+  const pastBrewDetails = JSON.parse(localStorage.getItem("brewArray"));
+  if (!pastBrewDetails) {
+    return;
+  }
+  // loop over array of objects
+  pastBrewDetails.forEach((element) => {
+    const tr = $("<tr>");
+    const grindTd = $("<td>")
+      .text(element.grind)
+      .addClass("text-center bg-espresso-700 py-3 text-ltcrm");
+    const beanTd = $("<td>").text(element.bean).addClass("text-center py-3 text-ltcrm");
+    const tempTd = $("<td>")
+      .text(element.temp)
+      .addClass("text-center bg-espresso-700 py-3 text-ltcrm");
+    const ratioTd = $("<td>").text(element.ratio).addClass("text-center py-3 text-ltcrm");
+    tr.append([grindTd, beanTd, tempTd, ratioTd]);
+    // append to table
+    tableEl.append(tr);
   });
 }
 
@@ -31,3 +56,5 @@ $("#brew-results").click(function () {
   $("#brew-results").addClass("hidden");
   $("#form").removeClass("hidden");
 });
+
+buildTable();
