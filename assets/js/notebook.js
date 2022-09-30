@@ -18,7 +18,6 @@ saveButton.click(function (event) {
   };
 
   // add object to array from form
-  console.log(pastBrewDetails);
   pastBrewDetails.push(brewDetails);
 
   localStorage.setItem("brewArray", JSON.stringify(pastBrewDetails));
@@ -26,7 +25,7 @@ saveButton.click(function (event) {
 });
 
 function buildTable() {
-  // ADD TRASHCAN IN FUTURE PR FOR USER DELETION
+  // ADD TRASHCAN IN FUTURE PR TO ALLOW USER'S TO DELETE THEIR BREWS
 
   // empty current table
   tableEl.text("");
